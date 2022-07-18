@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    /* background-image: url('../img/bg.png'); */
+    background: -webkit-linear-gradient(right, rgb(80, 0, 0), rgb(0, 0, 80));
+    background-size: cover;
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+h1{
+    font-size: 37px;
+    margin-bottom: 10px;
+    color: white;
+}
+p{
+    margin-bottom: 20px;
+    width: 300px;
+    color: white;
+}
+.word{
+  background: -webkit-linear-gradient(right, rgb(255, 0, 0), rgb(0, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span.payement{
+    font-size: 40px;
+}
+button{
+    color: white;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: -webkit-linear-gradient(right, rgb(255, 0, 0), rgb(0, 0, 255));
+    transition: .4s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.303);
+}
+.debit-card{
+    width: 300px;
+    height: 188px;
+    padding: 25px 25px 20px;
+    background: linear-gradient(110deg, rgba(180,180,180, 0.4), rgba(150,150,150,0.25));
+    border: 1px solid rgba(224,224,224, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.debit-card .visa{
+    width: 100px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+}
+
+.debit-card .chip {
+    width: 38px;
+    margin-bottom: 10px;
+}
+
+.debit-card h2 {
+    color: white;
+    font-size: 25px;
+    word-spacing: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .title{
+    display: block;
+    color: white;
+    font-size: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.info .detail{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.info .expire {
+    text-align: right;
+}
+
+.new-bg{
+    background: -webkit-linear-gradient(right, rgb(0 0 0), rgb(30 30 30))!important;
+}
+.new-payements{
+    background: -webkit-linear-gradient(right, rgb(68 68 68), rgb(36 36 36));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.new-btn{
+    background: -webkit-linear-gradient(right, rgb(40 40 40), rgb(14 14 14))!important;
+}
+.new-card{
+    background: linear-gradient(110deg, rgb(0 0 0 / 40%), rgb(46 46 46 / 25%))!important;
+    border: 1px solid rgb(0 0 0 / 20%)!important;
+}
